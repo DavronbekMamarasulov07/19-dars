@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(188, 143, 91, 0.8);
+    background-image: url(../images/NJ-logo.png);
+    background-size: 80px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.main-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.auth-img{
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 40px;
+    width: 100%;
+}
+
+.auth-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.form-content{
+    width: 100%;
+    max-width: 450px;
+    padding: 60px 40px 30px 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+#auth-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.auth-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+    
+}
+
+.auth-title a{
+    color: rgba(188, 143, 91) ;
+}
+
+#auth-form input{
+    padding: 10px ;
+    border: 1px solid rgba(188, 143, 91);
+    box-shadow: 0px 0px 5px transparent;
+    outline: none;
+    border-radius: 10px;
+  
+}
+
+#auth-submit{
+    margin-top: 30px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(188, 143, 91) ;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#auth-submit:active{
+    background-color: rgb(198, 123, 38);
+}
+
+#auth-form input:focus{
+    box-shadow: 0px 0px 5px rgba(188, 143, 91);
+    border: 1px solid transparent;
+}
+
+
+.message{
+    font-size: 22px;
+}
+
+
+.spinner-border{
+    display: none;
+}
+
+

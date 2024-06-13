@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px;
+    background-color: #fff;
+}
+
+.nav-rigth{
+    display: flex;
+    align-items: center;
+    gap: 30px ;
+}
+
+.logo-content{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+ .logo-content p{
+    font-size: 24px;
+ }
+
+ .menu-list{
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(188, 142, 91, 0.9);
+    border-radius: 5px;
+ }
+
+.menu-list:hover{
+    background-color: rgb(188, 143, 91);
+
+}
+
+.log-out{
+    font-size: 30px;
+    border: none;
+    padding: 5px 10px 5px 3px;
+    color: #fff;
+    background-color: transparent;
+    color: gray;
+    border-radius: 5px;
+}
+#log-out{
+    border: none;
+    background-color: transparent;
+}
+
+.log-out:hover{
+    background-color: rgba(128, 128, 128, 0.374);
+
+}
+
+#main{
+    display: flex;
+
+}
+.sidebar{
+    width: 100%;
+    max-width: 265px;
+    min-height: calc(100vh - 80px);
+    height: 100%;
+    background-color: #fff;
+    padding-block: 30px;
+    overflow: hidden;
+    padding: 5px;
+    transition: .5s;
+}
+
+.sidebar-list{
+    padding-left: 0 !important;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-list-item{
+    transition: .3s;
+    border-radius: 8px;
+    
+}
+
+.sidebar-list-item-link{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 30px;
+    font-weight: 500;
+    padding: 15px;
+    background-color: transparent;
+    color: rgb(82, 82, 82);
+}
+
+.sidebar-list-item:hover{
+    background-color: rgba(128, 128, 128, 0.166);
+}
+
+.hideSidebar{
+    max-width:65px ;
+}
+
+#hero{
+    border-radius: 8px 0 0 0 ;
+    background-color: rgba(236, 153, 64, 0.477);
+    width: 100%;
+    padding: 20px;
+}
