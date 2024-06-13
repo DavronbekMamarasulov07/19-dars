@@ -18,13 +18,11 @@ const $emailUpdateBtn = document.querySelector(".email-update-btn");
 let userId; 
 
 export const renderUser = (data) => {
-    console.log(data);
     $userName.innerText = data.name;
     $userEmail.innerText = data.email;
     $nameInput.value = data.name;
     $emailInput.value = data.email;
     userId = data._id; 
-    console.log(userId);
 };
 
 const updateUser = async (newData) => {

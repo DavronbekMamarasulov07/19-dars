@@ -4,7 +4,7 @@ import { handleLoading, handleNotification, saveToLocalStorage } from "../utils/
 const $authForm = document.querySelector("#auth-form");
 const $authSubmit = $authForm.querySelector("#auth-submit");
 const $toast = document.querySelector("#liveToast");
-const $formContent = document.querySelector("#form-content")
+const $formContent = document.querySelector(".form-content")
 
 function User(name, email, password){
     this.name = name;
@@ -19,7 +19,6 @@ const createNewUser = async (e) => {
     const formValues = children.map(input => input.value)
     const user = new User(...formValues);
 
-    console.log(user);
     
     try{
         handleLoading(true, $authSubmit)
