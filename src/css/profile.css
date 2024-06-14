@@ -9,15 +9,17 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .user-card-content{
     width: 100%;
-    max-width:700px;
     display: flex;
     align-items: center;
     gap: 50px;
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 20px;
 }
 
 .user-card{
@@ -45,7 +47,6 @@
     min-height: 150px;
     background-color: rgb(198, 123, 38);
     border-radius: 50%;
-    
 }
 
 .user-name-item{
