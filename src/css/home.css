@@ -49,7 +49,7 @@ ul{
     padding: 5px;
     color: #fff;
     background-color: rgb(188, 142, 91, 0.9);
-    border-radius: 5px;
+    border-radius: 8px;
  }
 
 .menu-list:hover{
@@ -58,7 +58,7 @@ ul{
 }
 
 .log-out{
-    font-size: 30px;
+    font-size: 26px;
     border: none;
     padding: 5px 10px 5px 3px;
     color: #fff;
@@ -126,7 +126,146 @@ ul{
 
 #hero{
     border-radius: 8px 0 0 0 ;
-    background-color: rgba(245, 185, 121, 0.477);
+    background-color: rgb(235, 235, 235);
     width: 100%;
     padding: 20px;
+}
+
+.hero-content h2{
+    font-size: 24px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.hero-content > h2 > i{
+    font-size: 20px;
+    color: rgb(122, 122, 122);
+}
+
+.rating-card{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.rating-card-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-card-item i {
+    font-size: 22px;
+    color: dodgerblue; 
+    margin-right: 5px;
+}
+
+.rating-card-item  strong{
+    font-size:20px;
+    color: rgb(135, 135, 135);
+
+}
+
+.rating-card-item span{
+    color: #222;
+}
+
+.rating-card-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 30px;
+    background-color: rgb(56, 202, 56);
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.rating-card-box  span{
+    font-size: 12px;
+    color: #fff;
+}
+
+
+.rating-card-line{
+    height: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(180, 237, 180);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.rating-card-line-item{
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    background-color: rgb(56, 202, 56);
+}
+
+.rating-card p{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+.rating-card p i {
+    font-size: 20px;
+    color: rgb(56, 202, 56);
+
+}
+
+.rating-card p strong{
+    color: rgb(135, 135, 135);
+}
+.rating-card p strong span{
+    color: #222;
+}
+
+.rating-card-xp-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.rating-card-xp-box span{
+    color:  rgb(188, 143, 91);
+    font-weight: 500;
+}
+
+.information-card{
+    margin-top: 16px;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;    
+    gap: 50px;
+}
+
+.info-card-img{
+    font-size: 100px;
+    color: rgb(122, 122, 122);
+    margin-left: 10px;
+}
+
+.info-card-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card-box h4{
+    font-size: 20px;
+    color: #222;
 }
