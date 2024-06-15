@@ -29,10 +29,6 @@ const renderUser = (userData) => {
 };
 
 
-
-
-
-
 const $pencilName = document.querySelector(".pencil-name");
 $pencilName.addEventListener("click", (event) => {
     event.preventDefault(); 
