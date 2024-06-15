@@ -2,6 +2,7 @@
 
 import axios from "../api/axios.js";
 
+// Profil ma'lumotlarini yuklash funktsiyasi
 const loadProfileData = async () => {
     try {
         const response = await axios("/users/profile");
@@ -28,16 +29,8 @@ const renderUser = (userData) => {
     console.log(userid);
 };
 
-const updateUser = async (userId, newData) => {
-    try {
-        const response = await axios.put(`/users/${userId}`, newData);
-        const updatedData = response.data;
 
-        renderUser(updatedData);
-    } catch (error) {
-        console.error('Foydalanuvchi ma\'lumotlarini yangilashda xato:', error.message);
-    }
-};
+
 
 
 
@@ -60,7 +53,6 @@ $pencilEmail.addEventListener("click", (event) => {
     $userEmailShow.classList.add("hide");
 });
 
-// Ismni yangilash tugmasi
 const $nameUpdateBtn = document.querySelector(".name-update-btn");
 $nameUpdateBtn.addEventListener("click", async (event) => {
     event.preventDefault(); 
