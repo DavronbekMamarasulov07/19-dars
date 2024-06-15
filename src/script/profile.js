@@ -2,7 +2,6 @@
 
 import axios from "../api/axios.js";
 
-// Profil ma'lumotlarini yuklash funktsiyasi
 const loadProfileData = async () => {
     try {
         const response = await axios("/users/profile");
