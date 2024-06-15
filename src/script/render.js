@@ -1,20 +1,8 @@
 
-import axios from "../api/axios.js";
-
 let userid;
 
-const loadProfileData = async () => {
-    try {
-        const response = await axios("/users/profile");
-        const userData = response.data;
 
-        renderUser(userData);
-    } catch (error) {
-        console.log(error);
-    }
-};
-
-const renderUser = (userData) => {
+export const renderUser = (userData) => {
     const $userName = document.querySelector(".user-name");
     const $userEmail = document.querySelector(".user-email");
     const $userNameValue = document.querySelector(".user-name-value");
@@ -88,5 +76,3 @@ const updateUser = async (userId, newData) => {
         console.error("Error updating user:", error);
     }
 };
-
-loadProfileData();
