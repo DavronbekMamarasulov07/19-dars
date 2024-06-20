@@ -44,7 +44,9 @@ const studentInfo = async (e) => {
     try {
         const response = await axios.post("/student/addStudent", student)
         const data =  response.data
-        console.log(data)
+        if(data){
+            location.reload()
+        }
 
     } catch (error) {
         console.log(error);
