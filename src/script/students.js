@@ -1,5 +1,4 @@
 import axios from "../api/axios.js";
-import { saveToLocalStorage } from "../utils/index.js";
 
 
 const $addStudentBtn = document.querySelector("#add-student")
@@ -43,13 +42,9 @@ const studentInfo = async (e) => {
     console.log(student);
 
     try {
-        const response = await axios.post("/students", student)
+        const response = await axios.post("/student/addStudent", student)
         const data =  response.data
-        console.log(data);
-        const token = data.token;
-        if (token) {
-            saveToLocalStorage('token', token);
-        }
+        console.log(data)
 
     } catch (error) {
         console.log(error);
@@ -58,11 +53,7 @@ const studentInfo = async (e) => {
 
 }
 
-
-
-
 $addStudentForm.addEventListener("submit", studentInfo)
-
 
 $addStudentBtn.addEventListener("click" , () => {
     $addStudentForm.classList.add("show")

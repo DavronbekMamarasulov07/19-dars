@@ -123,4 +123,15 @@ ul{
     border: 1px solid  rgb(198, 123, 38);
     padding: 6px 10px;
     font-size: 16px;
+    
+}
+
+.student-tr{
+    text-align: center;
+}
+
+.student-image img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }

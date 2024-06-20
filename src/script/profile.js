@@ -83,7 +83,9 @@ $emailUpdateBtn.addEventListener("click", async (event) => {
 const updateUser = async (userId, newData) => {
     try {
         const response = await axios.put(`/users/profile`, newData);
-        console.log("User updated successfully:", response.data);
+       if(response.data){
+        location.reload()
+       }
     } catch (error) {
         console.error("Error updating user:", error);
     }
